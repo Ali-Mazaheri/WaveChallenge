@@ -1,0 +1,10 @@
+﻿<div class="table">
+    <div class="header">
+        <div class="tableCell employeeId">Employee Id</div>
+        <div class="tableCell payPeriod">Pay Period</div>
+        <div class="tableCell amountPaid">Amount Paid</div>
+    </div>
+    <div class="rows">
+        <ReportTableRow class="row" *ngFor="let row of rows" [data]="row"></ReportTableRow>
+    </div>
+</div>

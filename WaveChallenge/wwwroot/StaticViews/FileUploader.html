@@ -1,0 +1,17 @@
+﻿<div class="uploader">
+    <label class="button">
+        Select a file
+        <input class="hidden" name="files" type="file" (change)="selectedFileChanged($event.target)" />
+    </label>
+    <input class="fileName" [value]="selectedFileName" type="text" readonly="readonly" />
+    <input class="button" type="button" (click)="upload()" value="Upload" />
+</div>
+<div class="selector">
+    <select name="example" #ee>
+        <option [value]="item" *ngFor="let item of reports">{{item}}</option>
+    </select>
+    <input class="button" type="button" (click)="populateReport(ee.value)" value="Populate" />
+</div>
+<br />
+<br />
+<hr />

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "system",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "sourceMap": false,
+    "target": "es2017",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": [
+      "core-js"
+    ],
+
+    "outDir": "./Scripts",
+
+    "allowJs": true,
+    "suppressExcessPropertyErrors": true,
+    "rootDir": "./TypedScripts",
+    "lib": [ "es2015", "es2015.iterable", "dom" ]
+  },
+  "include": [ "TypedScripts" ],
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}

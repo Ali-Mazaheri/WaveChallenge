@@ -1,0 +1,31 @@
+﻿:host {
+    clear: both;
+    display: block;
+    padding: 5px 100px;
+}
+
+.uploader {
+    float: left;
+}
+
+    .uploader .fileName {
+        padding: 0 3px;
+        width: 250px;
+        height: 30px;
+        border-radius: 3px;
+        border: solid 1px darkgray;
+        display: inline-block;
+        background-color: #fcfcfc;
+        color: #444;
+    }
+
+.selector {
+    float: right;
+}
+
+    .selector select {
+        width: 300px;
+        height: 30px;
+        border-radius: 3px;
+        border-color: darkgray;
+    }

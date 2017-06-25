@@ -1,0 +1,28 @@
+﻿:host {
+    clear: both;
+    display: block;
+}
+
+    :host:nth-child(2n+1) {
+        background-color: #f6f8fa;
+    }
+
+.tableCell {
+    padding: 5px;
+    display: table-cell;
+    flex: 1;
+    width: 150px;
+    border: solid 1px #dfe2e5;
+}
+
+    .tableCell.employeeId {
+        width: 130px;
+    }
+
+    .tableCell.payPeriod {
+        width: 190px;
+    }
+
+    .tableCell.amountPaid {
+        width: 130px;
+    }

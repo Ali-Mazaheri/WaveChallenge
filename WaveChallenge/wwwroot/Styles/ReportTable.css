@@ -1,0 +1,51 @@
+﻿:host {
+    clear: both;
+    margin: auto;
+    max-height: calc(100vh - 85px);
+    overflow: auto;
+    width: 470px;
+    display: block;
+    background-color: white;
+}
+
+.table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.header {
+    display: table-header-group;
+    position: fixed;
+    background-color: white;
+}
+
+.rows {
+    /*display: table-row-group;*/
+    margin-top: 27px;
+}
+
+.row {
+    display: table-row;
+}
+
+.tableCell {
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+    display: table-cell;
+    flex: 1;
+    border: solid 1px #dfe2e5;
+}
+
+    .tableCell.employeeId {
+        width: 130px;
+    }
+
+    .tableCell.payPeriod {
+        width: 190px;
+    }
+
+    .tableCell.amountPaid {
+        width: 130px;
+    }
