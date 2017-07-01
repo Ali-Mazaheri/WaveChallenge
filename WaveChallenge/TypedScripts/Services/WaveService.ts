@@ -20,13 +20,12 @@ export class WaveService {
         return this.fetchData(`Wave/GetReport?ReportId=${ReportId}`, "GET", null);
     }
 
-
     private fetchData(url: string, method: string, data: any): Promise<any> {
-        
+
         var opt: RequestOptionsArgs = {};
         opt.body = data;
         opt.method = method;
-        opt.url = url;
+        opt.url = "http://localhost:27527/" + url;
 
         return this.http.request(url, opt).map(x => x).toPromise();
     }

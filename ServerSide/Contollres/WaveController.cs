@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using System.IO;
 using Microsoft.AspNetCore.Http;
-using WaveChallenge.BL;
+using ServerSide.BL;
 
-namespace WaveChallenge.Contollres
+namespace ServerSide.Contollres
 {
     public class WaveController : Controller
     {

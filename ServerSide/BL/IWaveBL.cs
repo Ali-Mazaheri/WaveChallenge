@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
+using ServerSide.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WaveChallenge.Models;
 
-namespace WaveChallenge.BL
+namespace ServerSide.BL
 {
     public interface IWaveBL
     {

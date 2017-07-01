@@ -42,7 +42,7 @@ System.register(["@angular/core", "@angular/http", "rxjs/add/operator/toPromise"
                     var opt = {};
                     opt.body = data;
                     opt.method = method;
-                    opt.url = url;
+                    opt.url = "http://localhost:27527/" + url;
                     return this.http.request(url, opt).map(x => x).toPromise();
                 }
             };

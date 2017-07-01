@@ -7,10 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using WaveChallenge.DatabaseContext;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
-using WaveChallenge.BL;
+
 
 namespace WaveChallenge
 {
@@ -20,14 +19,7 @@ namespace WaveChallenge
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<WaveContext>(ServiceLifetime.Singleton);
-            services.AddTransient<IWaveBL, WaveBL>();
             services.AddMvc();
-        }
-
-        private object WaveBL(IServiceProvider arg)
-        {
-            throw new NotImplementedException();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,15 +47,6 @@ namespace WaveChallenge
             app.UseStaticFiles();
             app.UseStaticFiles(StaticFileOPtio1);
             app.UseStaticFiles(StaticFileOPtio2);
-            app.UseMvc(route =>
-            {
-                route.MapRoute(name: "default",
-                    template: "{controller}/{action}/{id?}");
-            });
-            //app.Run(async (context) =>
-            //{
-            //    await context.Response.WriteAsync("Hello World!");
-            //});
         }
     }
 }

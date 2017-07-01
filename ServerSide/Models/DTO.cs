@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WaveChallenge.Models
+namespace ServerSide.Models
 {
     public class DTO
     {

@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ServerSide.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WaveChallenge.Models;
 
-namespace WaveChallenge.DatabaseContext
+namespace ServerSide.DatabaseContext
 {
     public class WaveContext: DbContext
     {
