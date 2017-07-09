@@ -17,6 +17,7 @@ namespace ServerSide
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
+                .UseUrls("http://192.168.1.137:27527")
                 .Build();
 
             host.Run();
