@@ -36,8 +36,8 @@ namespace ServerSide
             app.UseCors(pb => {
                 pb.AllowAnyHeader();
                 pb.AllowAnyMethod();
-                //pb.AllowAnyOrigin();
-                pb.WithOrigins("http://localhost:15518");
+                pb.AllowAnyOrigin();
+                //pb.WithOrigins("http://localhost:15518");
             });
 
             app.UseDefaultFiles();
